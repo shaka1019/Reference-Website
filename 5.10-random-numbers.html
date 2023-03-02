@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>5.10 Random Numbers</title>
+</head>
+
+<body>
+  <h1>5.10 Random Numbers</h1>
+  <section>
+    <h2>Notes</h2>
+    <h3>Intro</h3>
+    <p><b>Random numbers</b> are useful in software development for many reasons- game mechanics, generating
+      usernames/passwords, anytime you need something seemingly unpredictable. <br><b>Pseudo-random-numbers-</b>
+      computers
+      are
+      just big calculators solving formulas and can't create truly randoms numbers, but instead use an algorithm that
+      generates numbers that seem random. </p>
+
+    <h3>Random Numbers in JS</h3>
+    <p>Javascript provides a number of functions that are useful for generating random
+      numbers.<br><code>Math.random()</code> is a function that returns a pseudo-random number between 0 and 1, not
+      incliding 1.<br><code>Math.floor()</code> is a function that takes a decimal number and rounds it down-chops off
+      the
+      digital part. </p>
+    <button onclick="alert(Math.random())">Test <code>Math.random</code></button>
+    <button onclick="alert(Math.floor(3.14159))">Test <code>Math.floor()</code></button>
+    <h3>Random Integer Calculations</h3>
+    <p>To produce a random integer from a min value to a max value (including the min and max) use this calculation.<br>
+      <u><i><br>Example</i></u> <br><br>Generate a random number from 1 to 10 amd store it in a variable
+      <br><code>var randNum = Math.floor(Math.random() * 11) + 1;</code>
+    </p>
+    <button onclick="example()">Generate random num from 1 to 10</button>
+    <script>
+      function example() {
+        var randNum = Math.floor(Math.random() * 10) + 1;
+        alert(randNum);
+      }
+    </script>
+  </section>
+
+  <section>
+    <h3>Roll Die</h3>
+    <p>1. Write a function that will “roll a die” (generate a random number) for the user. The user should be able to
+      choose how many sides are on the die.<br>
+
+      <b>Example Output:</b> Rolling a 6-sided die … 3
+    </p>
+      <button onclick="alert(Math.floor())">Roll</button>
+      <script>
+        function example() {
+          var rollDie = (Math.floor() * 6);
+        }
+      </script>
+  </section>
+</body>
+
+</html>
