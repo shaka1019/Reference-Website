@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7.5 Search Algorithms</title>
+</head>
+
+<body>
+  <h1>7.5 Search Algorithms</h1>
+  <section>
+    <h2>Objectives</h2>
+    <p>
+      To develop and write linear and binary search algorithms with guidance<br>
+      To be able to describe the efficiency of an algorithm using "Big O" notation
+    </p>
+  </section>
+
+  <section>
+    <h2>Notes</h2>
+    <h3>Search Algorithms</h3>
+    <p>
+      
+    </p>
+
+    <h3>Linear Search Algorithm</h3>
+    <p>
+      1. Get array and target Values
+      2. set a counter to i = 0
+      3. Check if the element at arr[i] is equal to the target value
+      4. If element matches, return index (i). Otherwise, increment i by 1 and repeat step 3
+      5. If the index is greater than the last index of an array, return-1 to indicate the target value was not found. 
+    </p>
+
+    <h3>Binary Search Algorithm</h3>
+    <p>
+      1. Sort array
+
+      2. Set the low index to 0 and high index to length - 1
+    
+       3. Set middle index to average of low and high
+    
+       4. If the middle index is the target, return the middle index
+    
+       5. If the target element is less than the element at the middle index, set the high index to the middle index – 1
+    
+       6. If the target element is greater than the element at the middle index, set the low index to the middle index + 1
+    
+       7. Repeat steps 3-6 until low and high index are equal
+    
+       8. Return -1 if element is not found
+    </p>
+
+    <h3>Algorithm Efficiency</h3>
+    <p>
+      Algorithm efficiency is often represented by how many maximun steos it would take for the algorithm to run. Computer scientists use the "Big O" notation. 
+    </p>
+  </section>
+</body>
+<script src="7.5-search-algorithms.js"></script>
+
+</html>
